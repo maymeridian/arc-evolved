@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "arcevolved",
+	"version": "${version}",
+	"name": "Arc Evolved",
+	"description": "An Immersive Dinosaur Mod.",
+	"authors": [
+		"MayMeridian"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/arcevolved/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.meridian.arcevolved.ArcEvolved"
+		],
+		"fabric-datagen": [
+			"com.meridian.arcevolved.ArcEvolvedDataGenerator"
+		],
+		"client": [
+			"com.meridian.arcevolved.ArcEvolvedClient"
+		]
+	},
+	"mixins": [
+		"arcevolved.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
